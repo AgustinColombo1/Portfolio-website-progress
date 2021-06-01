@@ -1,10 +1,13 @@
+$body: #F1F0EA;
+$h1-color: #878a8f;
+$font-color: #0c0c08;
+
 h1 {
-    color: #534B52;
     font-size: 10pt;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 400px;
     letter-spacing: 5pt;
-    color: #878a8f;
+    color: $h1-color;
 }
 
 h2 {
@@ -31,7 +34,6 @@ h4 {
     margin-top: 20px;    
 }
 
-
 #fotoAgus {
     width: 900px;
     height: 900px;
@@ -56,6 +58,7 @@ li a:hover {
 
 .image {
     position: relative;   
+    width: 500px;
 }
 
 .image__img {
@@ -132,7 +135,7 @@ li a:hover {
 
 .image__overlay:link, .image__overlay:hover, .image__overlay:visited, .image__overlay:active, .image__overlay {
     text-decoration:none;
-    color: #0c0c08;
+    color: $font-color;
 }
 
 .h5 {
@@ -142,7 +145,7 @@ li a:hover {
 
 .portafolioCompleto:link, .portafolioCompleto:hover, .portafolioCompleto:visited, .portafolioCompleto:active, .portafolioCompleto {
     text-decoration:none;
-    color: #0c0c08;
+    color: $font-color;
     text-decoration: none;
     justify-content: center;
 }
@@ -162,7 +165,7 @@ display: flex;
     width: 250px;
     height: 80px;
     border: none;
-    color: #0c0c08;
+    color: $font-color;
     border-radius: 4px;
     transition: ease-out 0.3s;
     font-size: 20pt;
@@ -174,7 +177,7 @@ display: flex;
 }
 
 .botonPortafolio:hover {
-    color: #0c0c08;
+    color: $font-color;
     cursor: pointer;
 }
 
@@ -197,4 +200,75 @@ display: flex;
     right: 0;
     opacity: 1;
     z-index: -1;
+}
+
+
+//each
+.pruebaSASS2 {
+
+background-color: darkturquoise;
+
+$medidas: 20px, 60px;
+
+@each $elem in $medidas {
+    .tamanio-#{$elem}{
+        font-size: $elem*2;
+    }
+}
+
+@each $elem in $medidas {
+    .ancho-#{$elem}{
+        font-size: $elem;
+    }
+}
+
+}
+
+//mapeo
+
+$colores: (ps:#001E36, ai: #FC860E, id: #49021F);
+
+@each $tipo, $color in $colores {
+    .programas-#{$tipo} {
+        background-color: $color;
+        color: $body;
+    }
+}
+
+//extend
+.cuadrado {
+    width: 100px; 
+    height: 100px; 
+    background: red;
+}
+
+.circulo {
+    @extend .cuadrado;
+    position: absolute;
+    left: 100px;
+    background-color: blue;
+    border-radius: 50px;
+    text-align: center;
+}
+
+//mixins
+@mixin destacar ($colorLetra, $colorFondo) {
+    color: $colorLetra;
+    background-color: $colorFondo;
+}
+
+.destacado {
+    @include destacar(red, yellow)
+}
+/*
+.destacado {
+    @include destacar(red, yellow)
+        margin-top: 100px;
+        font-weight: bolder;
+}
+hago otro .destacado porque no me deja incluir el margin-top y el font-weight debajo del inlude, creo que es por la version de sass.
+*/
+.destacado {
+    margin-top: 100px;
+    font-weight: bolder;
 }

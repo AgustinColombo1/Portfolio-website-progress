@@ -1,8 +1,7 @@
 h1 {
-  color: #534B52;
   font-size: 10pt;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 400px;
   letter-spacing: 5pt;
   color: #878a8f; }
 
@@ -45,7 +44,8 @@ li a:hover {
   padding: 50px; }
 
 .image {
-  position: relative; }
+  position: relative;
+  width: 500px; }
 
 .image__img {
   display: block;
@@ -164,3 +164,54 @@ li a:hover {
   right: 0;
   opacity: 1;
   z-index: -1; }
+
+.pruebaSASS2 {
+  background-color: darkturquoise; }
+  .pruebaSASS2 .tamanio-20px {
+    font-size: 40px; }
+  .pruebaSASS2 .tamanio-60px {
+    font-size: 120px; }
+  .pruebaSASS2 .ancho-20px {
+    font-size: 20px; }
+  .pruebaSASS2 .ancho-60px {
+    font-size: 60px; }
+
+.programas-ps {
+  background-color: #001E36;
+  color: #F1F0EA; }
+
+.programas-ai {
+  background-color: #FC860E;
+  color: #F1F0EA; }
+
+.programas-id {
+  background-color: #49021F;
+  color: #F1F0EA; }
+
+.cuadrado, .circulo {
+  width: 100px;
+  height: 100px;
+  background: red; }
+
+.circulo {
+  position: absolute;
+  left: 100px;
+  background-color: blue;
+  border-radius: 50px;
+  text-align: center; }
+
+.destacado {
+  color: red;
+  background-color: yellow; }
+
+/*
+.destacado {
+    @include destacar(red, yellow)
+        margin-top: 100px;
+        font-weight: bolder;
+}
+hago otro .destacado porque no me deja incluir el margin-top y el font-weight debajo del inlude, creo que es por la version de sass.
+*/
+.destacado {
+  margin-top: 100px;
+  font-weight: bolder; }
