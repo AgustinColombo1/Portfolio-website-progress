@@ -27,6 +27,31 @@ h2 {
 }
 
 .parrafos {
-    margin: 0px 200px 0 200px;
     text-align: center;
+}
+
+.parrafos > a {
+    cursor: default;
+    text-decoration: none;
+}
+
+@media (max-width:777px) {
+    .parrafos {
+        width: 550px;
+        display: inline-block;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width:970px) {
+    .parrafos {
+        margin: 0px 150px 0 150px;
+    }
+}
+
+@media (min-width:970px) {
+    .parrafos {
+        margin: 0px 200px 0 200px;
+    }
 }

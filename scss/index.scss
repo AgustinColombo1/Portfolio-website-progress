@@ -24,21 +24,22 @@ h4 {
     width: 100%;
     margin-top: 5px;
     position: relative;
-    top: 90px;
-    left: 40px;
+    top: 180px;
+    left: 40px; 
 }
 
 .Agus {
     display: flex;
     justify-content: center;
-    margin-top: 20px;    
 }
 
 #fotoAgus {
     width: 900px;
-    height: 900px;
-    margin-top: -35px;
-    padding-right: -300px;
+    height: 800px;
+    position: relative;
+    bottom: 60px;
+    /*margin-top: -35px;
+    padding-right: -300px;*/
 }
 
 li a:hover {
@@ -57,8 +58,9 @@ li a:hover {
 }
 
 .image {
-    position: relative;   
-    width: 500px;
+    position: relative;
+    width: 500px; 
+    margin: 20px;
 }
 
 .image__img {
@@ -88,7 +90,7 @@ li a:hover {
 }
 
 .image__overlay--primary {
-    background: rgba(73, 35, 144, 0.8);
+    background: rgba(73, 35, 144, 0.9);
 }
 
 .image__overlay > * {
@@ -128,6 +130,10 @@ li a:hover {
     text-decoration: none;
 }
 
+.proyectos {
+    text-decoration: none;
+}
+
 .ver-mas {
     font-size: 18pt;
     text-decoration: underline;
@@ -142,7 +148,7 @@ li a:hover {
     color: white;
     font-size: 18pt;
 }
-
+/*
 .portafolioCompleto:link, .portafolioCompleto:hover, .portafolioCompleto:visited, .portafolioCompleto:active, .portafolioCompleto {
     text-decoration:none;
     color: $font-color;
@@ -162,7 +168,7 @@ display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 250px;
+    width: 280px;
     height: 80px;
     border: none;
     color: $font-color;
@@ -202,73 +208,80 @@ display: flex;
     z-index: -1;
 }
 
+.portafolioCompleto > a {
+    cursor: default;
+    text-decoration: none;
+    }
+    */
+    
+.portafolioCompleto {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
 
-//each
-.pruebaSASS2 {
+a {
+    text-decoration: none;
+    font-size: 20px;
+}
 
-background-color: darkturquoise;
+.botonPortafolio {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding:12px 18px;
+    font-family: "roboto";
+    border:2px solid #4A2391 ;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s}
+    
+}
 
-$medidas: 20px, 60px;
+.botonPortafolio:hover {
+    background:#4A2391  ;
+    color:#fff
+    }
 
-@each $elem in $medidas {
-    .tamanio-#{$elem}{
-        font-size: $elem*2;
+
+@media (max-width:975px) {
+    .Agus h1, h2 {
+        left: 100px;
+        top: 80px;
+    }
+    #fotoAgus{
+        right: 100px;
     }
 }
-
-@each $elem in $medidas {
-    .ancho-#{$elem}{
-        font-size: $elem;
+@media (max-width:560px) {
+    .Agus {
+        display: flex;
+        flex-direction: column-reverse;
     }
-}
-
-}
-
-//mapeo
-
-$colores: (ps:#001E36, ai: #FC860E, id: #49021F);
-
-@each $tipo, $color in $colores {
-    .programas-#{$tipo} {
-        background-color: $color;
-        color: $body;
+    h1 {
+        font-size: 10;
     }
+    h2 {
+        font-size: 50pt;
+        line-height: 45pt;
+    }
+    @media (max-width:975px) {
+        .Agus h1, h2 {
+            top: -180px;
+        }
+    
 }
 
-//extend
-.cuadrado {
-    width: 100px; 
-    height: 100px; 
-    background: red;
-}
-
-.circulo {
-    @extend .cuadrado;
-    position: absolute;
-    left: 100px;
-    background-color: blue;
-    border-radius: 50px;
-    text-align: center;
-}
-
-//mixins
-@mixin destacar ($colorLetra, $colorFondo) {
-    color: $colorLetra;
-    background-color: $colorFondo;
-}
-
-.destacado {
-    @include destacar(red, yellow)
-}
-/*
-.destacado {
-    @include destacar(red, yellow)
-        margin-top: 100px;
-        font-weight: bolder;
-}
-hago otro .destacado porque no me deja incluir el margin-top y el font-weight debajo del inlude, creo que es por la version de sass.
-*/
-.destacado {
-    margin-top: 100px;
-    font-weight: bolder;
-}
+@media (max-width:840px) {
+    h1 {
+        font-size: 9;
+        line-height: 10pt;
+    }
+    h2 {
+        font-size: 30pt;
+        line-height: 30pt;
+    }
+    }
+    #fotoAgus{
+        right: 100px;
+        
+    }}
