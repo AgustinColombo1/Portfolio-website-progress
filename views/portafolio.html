@@ -21,27 +21,39 @@
 
     <header>
 
-        <div>
-            <!--menu navegador y logo-->
-            <a href="../index.html"><img src="../Imagenes/LogoAC.png" id="logo" alt="Logo Agustin Colombo"></a>
-
-            <nav>
-                <div class="hamburger">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
+        <nav>
+            <div>
+                <!--menu navegador y logo-->
+                <a href="../index.html"><img src="../Imagenes/LogoAC.png" width="100%" id="logo"
+                        alt="Logo Agustin Colombo"></a>
+    
+                <div class="navbar">
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                            <a href="../index.html">Inicio</a>
+                            <a href="./views/portafolio.html">Portafolio</a>
+                            <a href="./views/sobre-mi.html">Sobre mi</a>
+                            <a href="./views/sobre-mi.html">Contacto</a>
+                            <a href="./views/cv.html">Curriculum vitae</a>
+                        </div>
+                    </div>
+    
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+                        <span onclick="openNav()">
+                            <div class="hamburger">
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                            </div>
+                        </span>
+                    </span>
+    
                 </div>
-                <ul class="nav-links">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../views/portafolio.html">Portafolio</a></li>
-                    <li><a href="../views/sobre-mi.html">Sobre mi</a></li>
-                    <li><a href="../views/contacto.html">Contacto</a></li>
-                    <!--<li><a href="../views/behance.html">Behance</a></li>-->
-                    <li><a href="../views/cv.html">Curriculum vitae</a></li>
-                </ul>
-            </nav>
-        </div>
-
+            </div>
+    
+        </nav>
+    
     </header>
 
     <main>
@@ -51,19 +63,18 @@
 
 
         <div class="portafolio">
-            <h1>Portafolio</h1>
+            <h1>PORTAFOLIO</h1>
             <section class="trabajos">
                 <div class="image">
-                    <a class="proyectos" href="https://www.behance.net/gallery/120234125/Devil-Vector-graphic">
+                    <a class="proyectos" href="https://www.behance.net/gallery/120234125/Devil-Vector-graphic" target="_blank">
                         <img class="image__img" width="30%" src="../Imagenes/Proyecto1.jpg" alt="Proyecto 'Devil'">
                         <div class="image__overlay image__overlay--primary">
                             <span class="h5">
                                 2021
                             </span>
                             <div class="image__title">
-                                <b>'Devil' Vector gráfico</b> — Primer examen universitario de la materia de
-                                "ilustración
-                                digital"
+                                <b>"Devil" Vector gráfico</b> — Primer examen universitario de la materia Ilustración
+                                Digital
                             </div>
                             <br>
                             <p class="ver-mas">
@@ -74,7 +85,7 @@
         </div>
 
         <div class="image">
-            <a class="proyectos" href="https://www.behance.net/gallery/106145995/Real-estate-business-card">
+            <a class="proyectos" href="https://www.behance.net/gallery/106145995/Real-estate-business-card" target="_blank">
                 <img class="image__img" width="30%" src="../Imagenes/MINIATURA.jpg" alt="Proyecto Business cards">
                 <div class="image__overlay image__overlay--primary">
                     <span class="h5">
@@ -114,12 +125,7 @@
 <footer>
     <!--redes y contacto-->
     <div class="container__footer">
-        <div class="box__footer">
-            <div class="logo">
-                <!--<img src="../Imagenes/LogoFooter.png" id="logoFooter" alt="">-->
-            </div>
-
-        </div>
+        
         <div class="box__footer">
             <h3>Sígueme en</h3>
             <a href="https://www.behance.net/agustincolombo1" target="_blank">
@@ -136,55 +142,67 @@
             </a>
             <a href="mailto:aguscolombo02@gmail.com">
                 <i class="fas fa-envelope-square"></i>
-                Correo electronico
+                Correo electrónico
             </a>
         </div>
 
         <div class="box__footer">
             <h3>Portafolio</h3>
-            <a href="">"Devil"</a>
-            <a href="">Grupo | Tress</a>
-            <a href="">Propedeuse</a>
-            <a href="">Kobe bryant</a>
+            <a href="#">"Devil"</a>
+            <a href="#">Grupo | Tress</a>
+            <!--<a href="">Propedeuse</a>
+            <a href="">Kobe Bryant</a>-->
         </div>
 
         <div class="box__footer">
             <h3>Sobre mi</h3>
-            <a href="./views/sobre-mi.html">Un poco más sobre mi</a>
-            <a href="./views/sobre-mi.html#especialidades">Especialidades</a>
-            <a href="./views/sobre-mi.html#educacion">Educación</a>
-            <a href="./views/sobre-mi.html#educacionenprogreso">Educación en progreso</a>
-            <a href="./views/sobre-mi.html#experiencia"">Experiencia</a>
-            <a href="./views/sobre-mi.html#programas">Programas</a>
+            <a href="../views/sobre-mi.html">Un poco más sobre mi</a>
+            <a href="../views/sobre-mi.html">Especialidades</a>
+            <a href="../views/sobre-mi.html">Educación</a>
+            <a href="../views/sobre-mi.html">Educación en progreso</a>
+            <a href="../views/sobre-mi.html">Experiencia</a>
+            <a href="../views/sobre-mi.html">Programas</a>
         </div>
 
         <div class="box__footer">
             <h3>Curriculum vitae</h3>
-            <a href="">Ver Curriculum vitae en español</a>
-            <a href="">Descargar en español</a>
-            <a href="">Descargar en ingles</a>
-            <a href="">Ver Curriculum vitae en inglés</a>
+            <a href="../views/cv.html">Ver Curriculum vitae en español</a>
+            <a href="../views/cv.html">Descargar en español</a>
+            <a href="../views/cv.html">Descargar en inglés</a>
+            <a href="../views/cv.html">Ver Curriculum vitae en inglés</a>
         </div>
     </div>
+    
+            <div class="linea">
+                <hr class="linea">
+            </div>
 
     <div class="box__copy">
-        <hr>
+        
         <div class="footerLogo">
-            <p>
-            <a href="#"><img src="../Imagenes/LogoFooter.png" id="logoFooter" alt="Logo AC footer"></a>
+            <a href="#"><img src="../Imagenes/LogoFooter.png" id="logoFooter" class="column" alt="Logo AC footer"></a>
+            <p class="column">
             ©2021
             <b>Agustín Colombo.</b>
-            <br>
-            Buenos Aires, Argentina.</p>
+            <p>Buenos Aires, Argentina.</p>
         </div>
     </div> 
-            <br>
+
 
 </footer>
 
-
-
     <div class="scripts">
+        <!--script navbar-->
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
+
         <!--script bootstrap-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
@@ -196,6 +214,8 @@
         <!--script navbar-->
         <script src="/app.js"></script>
     </div>
+
+
 </body>
 
 </html>

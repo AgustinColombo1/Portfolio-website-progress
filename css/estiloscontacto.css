@@ -11,7 +11,9 @@ body {
 
 .contactame li {
     list-style: none;
-}*/
+}
+
+
 
 .form {
     width:510px;
@@ -70,7 +72,9 @@ button {
     font-family: "roboto";
     border:2px solid #4A2391 ;
     background:0;
-    color:#5a5a6e;cursor:pointer;transition:all .3s}
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s}
 
 button:hover {
     background:#4A2391  ;
@@ -97,4 +101,80 @@ button:hover {
 
 span {
     margin:0 5px 0 15px
+}*/
+
+.get_in_touch {
+    max-width: 800px;
+    margin: 50px auto;
+    position: relative;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+}
+.get_in_touch .title {
+    text-transform: uppercase;
+    font-weight: 200;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 17pt;
+    line-height: 15pt;
+    letter-spacing: 6.5px;
+    color: #534B52;
+}
+
+.contact-form .form-field {
+    position: relative;
+    margin: 32px 0px;
+}
+
+.contact-form .input-text {
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: #4A2391;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+}
+/*
+.contact-form .input-text:focus + .label,
+.contact-form .input-text.not-empty + .label {
+    transform: translateY(-24px);
+}*/
+
+label {
+    margin-bottom: 24px;
+}
+
+.contact-form .input-text:focus {
+    outline: none;
+}
+
+.contact-form .label {
+    position: absolute;
+    left: 20px;
+    bottom: 11px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #4A2391;
+    cursor: text;
+    text-transform: capitalize;
+    transition: transform 0.2s ease-in-out;
+}
+
+.submit-btn {
+    padding:12px 18px;
+    margin:12px 0 0;
+    font-family: "roboto";
+    border:2px solid #4A2391 ;
+    background:0;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s}
+
+.submit-btn:hover {
+    background:#4A2391  ;
+    color:#fff
 }

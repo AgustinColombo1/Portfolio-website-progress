@@ -1,68 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">-->
-    <link rel="shortcut icon" href="Imagenes/LogoACico.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../Imagenes/LogoACico.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../css/estilossobremi.css">
-    
+
 
 
     <title>Sobre mi | Agustín Colombo</title>
 </head>
+
 <body>
 
-    <header>
+<header>
 
+    <nav>
         <div>
             <!--menu navegador y logo-->
-            <a href="../index.html"><img src="../Imagenes/LogoAC.png" id="logo" alt="Logo Agustin Colombo"></a>
+            <a href="../index.html"><img src="../Imagenes/LogoAC.png" width="100%" id="logo"
+                    alt="Logo Agustin Colombo"></a>
 
-            <nav>
-                <div class="hamburger">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
+            <div class="navbar">
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="../index.html">Inicio</a>
+                        <a href="./views/portafolio.html">Portafolio</a>
+                        <a href="./views/sobre-mi.html">Sobre mi</a>
+                        <a href="./views/sobre-mi.html">Contacto</a>
+                        <a href="./views/cv.html">Curriculum vitae</a>
+                    </div>
                 </div>
-                <ul class="nav-links">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../views/portafolio.html">Portafolio</a></li>
-                    <li><a href="../views/sobre-mi.html">Sobre mi</a></li>
-                    <li><a href="../views/contacto.html">Contacto</a></li>
-                    <!--<li><a href="../views/behance.html">Behance</a></li>-->
-                    <li><a href="../views/cv.html">Curriculum vitae</a></li>
-                </ul>
-            </nav>
+
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+                    <span onclick="openNav()">
+                        <div class="hamburger">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </span>
+                </span>
+
+            </div>
         </div>
 
-    </header>
+    </nav>
 
-<main>
+</header>
 
-    <br>
-    <br>
-    <!--datos personales, estudios, experiencias, etc-->
-    <div class="parrafos">
-        <h1>UN POCO MÁS SOBRE MI</h1>
-        <p>Soy Agustín Colombo, un actual estudiante de las carreras diseño multimedial y diseño UX/UI. A lo largo de mi
-            juventud realicé cursos donde pude obtener conocimientos adicionales a mis demás estudios.
-        </p>
-    </div>
+    <main>
 
-    <br><br>
+        <!--datos personales, estudios, experiencias, etc-->
 
-    <div class="parrafos">
-        <a href="#especialidades"><h2>Especialidades</h2></a>
-        <p>Diseño gráfico, desarrollo web, community manager, content manager, edición de video.</p>
-    </div>
+        <div class="parrafos">
+            <h1>UN POCO MÁS SOBRE MI</h1>
+            <p>Soy Agustín Colombo, un actual estudiante de las carreras diseño multimedial y diseño UX/UI. A lo largo de mi juventud realicé cursos donde pude obtener conocimientos adicionales a mis demás estudios.
+            </p>
+        </div>
 
+
+        <div class="parrafos">
+            <div class="especialidades">
+                    <h2>Especialidades</h2>
+                <p>Diseño gráfico, desarrollo web, community manager, content manager, edición de video.</p>
+            </div>
+        </div>
+        <!--
     <div class="parrafos">
         <a href="#educacion"><h2>Educación</h2></a>
         <p><strong>2015 - 2019</strong> <u>Escuela secundaria.</u> “Instituto San Ramón Nonato”.</p>
@@ -102,52 +115,341 @@
         <p>Adobe After Effects</p>
         <p>Adobe Premiere Pro</p>
         <p>Adobe Lightroom</p>
+    </div>-->
+
+        <div class="container">
+            <h2>Educación</h2>
+
+
+            <div class="sobre-mi">
+                <hr class="lineas">
+
+                <div class="años">
+                    <p>2015</p>
+                    <p>2019</p>
+                </div>
+
+                <p class="estudio">
+                    Escuela secundaria.
+                </p>
+                <p class="institucion">
+                    “Instituto San Ramón Nonato”.
+                </p>
+            </div>
+
+
+            <div class="sobre-mi">
+                <hr class="lineas">
+
+                <div class="años">
+                    <p>2009</p>
+                    <p>2019</p>
+                </div>
+
+                <p class="estudio">
+                    Estudios superiores en inglés.
+                </p>
+                <p class="institucion">
+                    “Instituto Cambridge de Cultura Inglesa“.
+                </p>
+            </div>
+
+
+            <div class="sobre-mi">
+                <hr class="lineas">
+
+                <div class="años">
+                    <p>2020</p>
+                    <!--<p>2019</p>-->
+                </div>
+
+                <p class="estudio">
+                    Curso de capacitación: Fundamentos del Marketing.
+                </p>
+                <p class="institucion">
+                    “Google Activate“.
+                </p>
+            </div>
+
+
+            <div class="sobre-mi">
+                <hr class="lineas">
+
+                <div class="años">
+                    <p>2020</p>
+                    <!--<p>2019</p>-->
+                </div>
+
+                <p class="estudio">
+                    Curso de capacitación: Comercio electrónico.
+                </p>
+                <p class="institucion">
+                    “Google Activate“.
+                </p>
+            </div>
+
+            <div class="sobre-mi">
+                <hr class="lineas">
+
+                <div class="años">
+                    <p>2020</p>
+                    <p>2021</p>
+                </div>
+
+                <p class="estudio">
+                    Curso de formación profesional: Diseño gráfico digital.
+                </p>
+                <p class="institucion">
+                    “Escuela Da Vinci“.
+                </p>
+            </div>
+
+            <div class="sobre-mi">
+                <hr class="lineas">
+
+                <div class="años">
+                    <p>2021</p>
+                    <!--<p>presente</p>-->
+                </div>
+
+                <p class="estudio">
+                    Curso de capacitación: Desarrollo web.
+                </p>
+                <p class="institucion">
+                    “Coderhouse“.
+                </p>
+
+
+            <h2 class="progreso">Educación en progreso</h2>
+
+            <div class="sobre-mi">
+                <hr class="lineas">
+
+                <div class="años">
+                    <p>2021</p>
+                    <p>presente</p>
+                </div>
+
+                <p class="estudio">
+                    Carrera universitaria: Diseño Multimedial.
+                </p>
+                <p class="institucion">
+                    “Escuela Da Vinci“.
+                </p>
+            </div>
+
+            <div class="sobre-mi">
+                <hr class="lineas">
+
+                <div class="años">
+                    <p>2020</p>
+                    <p>presente</p>
+                </div>
+
+                <p class="estudio">
+                    Curso de capacitación: Fotografía y edición de arquitectura, inmobiliaria  e interiores.
+                </p>
+                <p class="institucion">
+                    “Academia Online Joan Roig“.
+                </p>
+            </div>
+
+            <div class="sobre-mi">
+                <hr class="lineas">
+
+                <div class="años">
+                    <p>2021</p>
+                    <p>presente</p>
+                </div>
+
+                <p class="estudio">
+                    Carrera: Diseño UX/UI avanzado.
+                </p>
+                <p class="institucion">
+                    “Coderhouse“.
+                </p>
+            </div>
+        </div>
+
+        <h2 class="progreso">Experiencia</h2>
+
+            <div class="sobre-mi">
+                <hr class="lineas">
+
+                <div class="años">
+                    <p>2021</p>
+                </div>
+
+                <p class="estudio">
+                    Diseñador, Content Manager, Community manager, edición de video, marketing.
+                </p>
+                <p class="institucion">
+                    Coach de negocios “Maty Colombo”.
+                </p>
+            </div>
+
+            <div class="sobre-mi">
+                <hr class="lineas">
+
+                <div class="años">
+                    <p>2021</p>
+                </div>
+
+                <p class="estudio">
+                    Diseñador, Content Manager, Community manager, edición de video, marketing.
+                </p>
+                <p class="institucion">
+                    Inmobiliaria “Grupo Tress Argentina ”.
+                </p>
+            </div>
+
+            <div class="sobre-mi">
+                <hr class="lineas">
+
+                <div class="años">
+                    <p>2020</p>
+                    <p>2021</p>
+                </div>
+
+                <p class="estudio">
+                    Digitalización, manejo de redes sociales, manejo de web, portales y diseños.
+                </p>
+                <p class="institucion">
+                    Inmobiliaria “Grupo Tress Spain”.
+                </p>
+            </div>
+
+            <div class="sobre-mi">
+                <hr class="lineas">
+
+                <div class="años">
+                    <p>2020</p>
+                    <p>2021</p>
+                </div>
+
+                <p class="estudio">
+                    Atención al público.
+                </p>
+                <p class="institucion">
+                    Juguetería “Y Colorin Colorado...”.
+                </p>
+            </div>
+
+            </div>
+            
+            <div class="parrafos">
+            <div class="programas">
+                <h2>Programas</h2>
+
+                <p>Adobe Photoshop</p>
+                <p>Adobe Illustrator</p>
+                <p>Adobe InDesign</p>
+                <p>Adobe After Effects</p>
+                <p>Adobe Premiere Pro</p>
+                <p>Adobe Lightroom</p>
+        </div>
+
     </div>
-</main>
+
+        
+
+    </main>
 
 <footer>
-    <br>
-    <br>
-    <hr>
-    <br>
-
     <!--redes y contacto-->
-    <h3>Sígueme en</h3>
-    <ul class="redesFooter">
-        <li><a href="https://www.behance.net/agustincolombo1" target="_blank">Behance</a></li>
-        <li><a href="https://www.linkedin.com/in/agustincolombo/" target="_blank">Linkedin</a></li>
-        <li><a href="https://wa.me/5491150029908" target="_blank">Celular</a></li>
-        <li><a href="mailto:aguscolombo02@gmail.com">Correo electronico</a></li>
-    </ul>
+    <div class="container__footer">
+        
+        <div class="box__footer">
+            <h3>Sígueme en</h3>
+            <a href="https://www.behance.net/agustincolombo1" target="_blank">
+                <i class="fab fa-behance-square"></i>
+                Behance
+            </a>
+            <a href="https://www.linkedin.com/in/agustincolombo/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+                Linkedin
+            </a>
+            <a href="https://wa.me/5491150029908" target="_blank">
+                <i class="fab fa-whatsapp-square"></i>
+                Celular
+            </a>
+            <a href="mailto:aguscolombo02@gmail.com">
+                <i class="fas fa-envelope-square"></i>
+                Correo electrónico
+            </a>
+        </div>
 
-    <br>
-    <br>
+        <div class="box__footer">
+            <h3>Portafolio</h3>
+            <a href="../views/portafolio.html">"Devil"</a>
+            <a href="../views/portafolio.html">Grupo | Tress</a>
+            <!--<a href="">Propedeuse</a>
+            <a href="">Kobe Bryant</a>-->
+        </div>
 
-    <div class="footer">
-        <img src="../Imagenes/LogoFooter.png" id="logoFooter" alt="">
-        <p>©2021
-            <strong>Agustín Colombo.</strong>
-            <br>
-            Buenos Aires, Argentina.</p>
+        <div class="box__footer">
+            <h3>Sobre mi</h3>
+            <a href="#">Un poco más sobre mi</a>
+            <a href="#">Especialidades</a>
+            <a href="#">Educación</a>
+            <a href="#">Educación en progreso</a>
+            <a href="#">Experiencia</a>
+            <a href="#">Programas</a>
+        </div>
+
+        <div class="box__footer">
+            <h3>Curriculum vitae</h3>
+            <a href="../views/cv.html">Ver Curriculum vitae en español</a>
+            <a href="../views/cv.html">Descargar en español</a>
+            <a href="../views/cv.html">Descargar en inglés</a>
+            <a href="../views/cv.html">Ver Curriculum vitae en inglés</a>
+        </div>
     </div>
+    
+            <div class="linea">
+                <hr class="linea">
+            </div>
 
-    <br>
+    <div class="box__copy">
+        
+        <div class="footerLogo">
+            <a href="#"><img src="../Imagenes/LogoFooter.png" id="logoFooter" class="column" alt="Logo AC footer"></a>
+            <p class="column">
+            ©2021
+            <b>Agustín Colombo.</b>
+            <p>Buenos Aires, Argentina.</p>
+        </div>
+    </div> 
+
 
 </footer>
 
+    
 
-<div class="scripts">
-    <!--script bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
-    </script>
+    <div class="scripts">
+        <!--script navbar-->
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
 
-    <!--script iconos footer-->
-    <script src="https://kit.fontawesome.com/6b7cec75eb.js" crossorigin="anonymous"></script>
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
 
-    <!--script navbar-->
-    <script src="/app.js"></script>
-</div>
+        <!--script bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+        </script>
+
+        <!--script iconos footer-->
+        <script src="https://kit.fontawesome.com/6b7cec75eb.js" crossorigin="anonymous"></script>
+
+        <!--script navbar-->
+        <script src="/app.js"></script>
+    </div>
+
 </body>
 
 </html>
