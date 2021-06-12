@@ -266,6 +266,9 @@ a {
     }
 }
 @media (max-width:560px) {
+    footer {
+        width: 100%;
+    }
     .Agus {
         display: flex;
         flex-direction: column-reverse;
