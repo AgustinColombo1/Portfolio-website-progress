@@ -3,3 +3,7 @@ $().ready(function(){
 		$(this).toggleClass('open');
 	});
 });
+
+$(".theme-switch").on("click", () => {
+	$("body").toggleClass("light-theme");
+});

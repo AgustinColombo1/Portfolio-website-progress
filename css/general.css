@@ -4,6 +4,17 @@
     font-family: "roboto";
 }
 
+#icono{
+    width: 30px;
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 body {
     font-family: "roboto";
     background-color: #F1F0EA;
