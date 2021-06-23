@@ -133,42 +133,14 @@ p, a ,form{
   width: 70px;
   height: 70px;
 }
-/*
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  
-}
 
-.nave {
-  margin-top: 10px;
-}
-
-nav ul li {
-  padding: 10px;
-  margin-top: 15px;
-  margin-left: 10px;
-  
-}
-
-li a:hover {
-  background-color: gray;
-  padding: 10px 10px 10px 10px;
-
-}
-*/
 footer {
+    margin-top: 80px;
     width: 100%;
     height: 50%;
-    /*padding: 50px 0px;*/
     *background-color: url(../Imagenes/background-footer.svg); z-index:-1 ;
     *background-size: cover;
     background-color: rgb(218, 218, 218);
-    /*-webkit-mask-image: url(../Imagenes/background-footer.svg); z-index: -1;
-    mask-image: url(../Imagenes/background-footer.svg); z-index:-1 ;
-    -webkit-mask-size: cover;
-    mask-size: cover;*/
 }
 
 

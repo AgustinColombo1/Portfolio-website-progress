@@ -137,7 +137,7 @@ div.sobre-mi {
 
 @media (max-width:777px) {
     .parrafos {
-        width: 100%;
+        width: 80%;
         display: inline-block;
         flex-direction: column;
         justify-content: center;
@@ -145,8 +145,13 @@ div.sobre-mi {
 }
 
 @media (max-width:970px) {
+    .sobre-mi  {
+        margin-right: 50px;
+    }
+    
     .parrafos {
-        margin: 0px 150px 0 150px;
+        width: 80%;
+        margin: 0px 200px 0 200px;
     }
 }
 

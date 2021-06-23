@@ -1,7 +1,6 @@
 {
   "name": "sass",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "build-css": "node-sass --include-path scss scss/index.scss css/estilosindex.css",
@@ -13,5 +12,15 @@
   "dependencies": {
     "node-sass": "^6.0.0",
     "nodemon": "^2.0.7"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AgustinColombo1/Portfolio-website-progress.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AgustinColombo1/Portfolio-website-progress/issues"
+  },
+  "homepage": "https://github.com/AgustinColombo1/Portfolio-website-progress#readme",
+  "description": ""
 }
