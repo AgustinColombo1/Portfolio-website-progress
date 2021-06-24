@@ -10,13 +10,11 @@ h1 {
   text-transform: uppercase;
   font-weight: 400px;
   letter-spacing: 5pt;
-  color: #878a8f;
-}
-
+  color: #878a8f; }
 
 h2 {
   width: 50vw;
-  font-size: calc(1px + 5vw);
+  font-size: calc(5px + 5vw);
   /*font-size: 45pt;*/
   /*prueba calc*/
   /*line-height: 49pt;*/
@@ -32,9 +30,11 @@ h4 {
   letter-spacing: 6.5px;
   color: #534B52; }
 
-.Agus h1, h2 {
-  /*width: 50vw;*//*prueba de vw*/
-  width: 100%;
+.Agus h1,
+h2 {
+  width: 50vw;
+  /*width: 100%;*/
+  /*prueba de vw*/
   margin-top: 5px;
   position: relative;
   top: 180px;
@@ -42,7 +42,7 @@ h4 {
 
 .Agus {
   margin: 0 auto;
-  width: 95vw;
+  width: 85vw;
   /*width: 100%;*/
   display: flex;
   flex: 1;
@@ -52,7 +52,7 @@ h4 {
 #fotoAgus {
   /*width: 50%;*/
   /*prueba de vw*/
-  width: 50vw;
+  width: 45vw;
   position: relative;
   margin-right: 0; }
 
@@ -113,8 +113,7 @@ h4 {
   top: 0;
   transform-origin: center;
   trsnsform: scale(1) translateZ(0);
-  transition: filter 200ms linear,
- transform 200ms linear; }
+  transition: filter 200ms linear, transform 200ms linear; }
 
 .card:hover .card__background {
   transform: scale(1.05) translateZ(0); }
@@ -152,7 +151,8 @@ h4 {
   cursor: pointer;
   transition: all .3s; }
 
-.botonPortafolio, a {
+.botonPortafolio,
+a {
   text-decoration: none; }
 
 .botonPortafolio:hover {
@@ -160,102 +160,46 @@ h4 {
   color: #fff; }
 
 /*mios*/
-/*
-@media (max-width:975px) {
+@media (max-width: 840px) {
+  .Agus h1,
+  h2 {
+    margin-top: 5px;
+    position: relative;
+    left: 100px;
+    top: 100px;
+    margin-left: -70px; } }
 
-    .Agus h1,
-    h2 {
-        left: 100px;
-        top: 80px;
-    }
-
-    #fotoAgus {
-        right: 100px;
-    }
-}
-
-    @media (max-width:560px) {
-
-   /* #logo{
-        width: 50px;
-        height: 50px;
-    }
-
-    .navbar {
-        width: 10%;
-    }
-
-    .Agus {
-        margin-top: 45px;
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    h1 {
-        font-size: 10;
-    }
-
-    h2 {
-        font-size: 50pt;
-        line-height: 45pt;
-    }
-    footer {
-            width: 100%;
-        }
-    }
-
-
-
-    @media (max-width:975px) {
-
-        .Agus h1,
-        h2 {
-            top: -180px;
-        }
-
-    }
-
-    @media (max-width:840px) {
-        h1 {
-            font-size: 9;
-            line-height: 10pt;
-        }
-
-        h2 {
-            font-size: 30pt;
-            line-height: 30pt;
-        }
-
-        #fotoAgus {
-            right: 100px;
-
-        }
-        }
-*/
-/*cards*/
-
-@media (max-width: 850px) {
+@media (max-width: 620px) {
+  .Agus {
+    margin: 0 auto;
+    padding: 0 auto; }
+  div.Agus {
+    margin: 0 auto;
+    padding: 0 auto; }
+  h1 {
+    font-size: 4vw; }
+  h2 {
+    margin: 0 auto;
+    font-size: 9vw;
+    line-height: calc(5px + 09vw); }
   .Agus h1, h2 {
-}
-
-}
-
-
-@media (max-width: 580px) {
+    text-align: center;
+    width: 170%;
+    margin: 0 auto;
+    position: relative;
+    top: 100vw;
+    left: 30vw; }
   #fotoAgus {
-    margin-right: 150px;
-  }
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 90vw;
+    top: 10vw;
+    right: 20vw; }
+  .portafolio {
+    margin-top: calc(100px + 25vw); } }
 
-  .textos {
-    margin-top: 180px;
-  }
-
-}
-/*
-@media (max-width: 960px) {
-}
-*/
-
+/*cards*/
 @media (min-width: 540px) {
   .card-grid {
     grid-template-columns: repeat(2, 1fr); } }

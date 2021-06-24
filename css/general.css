@@ -108,6 +108,11 @@ div.overlay-content {
     margin-top: 10px;
     cursor: pointer;
     z-index: 1;
+    left: 40px;
+    position: absolute;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -124,14 +129,6 @@ p, a ,form{
     font-family: "roboto";
     font-weight: 400;
     color: #0C0C08;
-}
-
-#logo {
-  left: 40px;
-  position: absolute;
-  cursor: pointer;
-  width: 70px;
-  height: 70px;
 }
 
 footer {
@@ -228,55 +225,7 @@ footer {
     display: flex;
     justify-content: center;
 }
-/*
-#logoFooter {
-    position: absolute;
-    left: 460px;
-    cursor: pointer;
-    height: 50px;
-    width: 50px;
-}*/
 
 .footerLogo {
     margin-top: 30px;
 }
-
-/*
-.row {
-    display: flex;
-    flex-direction: row;
-    align-items: cemter;
-    padding-left: 30px;
-    padding-right: 30px;
-    justify-content: center;
-}
-.redesFooter {
-    margin-top: 10px;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-}
-
-a:link {
-    color: #0C0C08;
-}
-
-a:visited { 
-    color: #0C0C08;
-}
-
-a:hover {
-    color: #4A2391;
-}
-
-.footer {
-    display: flex;
-    justify-content: center;
-}
-
-#logoFooter {
-    cursor: pointer;
-    height: 50px;
-    width: 50px;
-}
-*/
